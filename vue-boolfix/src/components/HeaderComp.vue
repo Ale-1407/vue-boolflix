@@ -4,8 +4,8 @@
           <h2 class="text-danger fw-semibold">BOOLFLIX</h2>
         </div>
         <div class="d-flex">
-            <input type="text">
-            <button class="ms-3">Cerca</button>
+            <input type="text" v-model="searchInput" placeholder="Cerca"
+            @keyup="$emit( 'emitSearch', searchInput )">
         </div>
         
     </header>
@@ -15,20 +15,11 @@
 
 export default {
   name: 'HeaderComp',
-  components: {
-
+  data() {
+    return{
+        searchInput: ''
+    }
   }
 }
 </script>
 
-<style lang="scss">
-
-button{
-    border: transparent;
-}
-
-button:hover{
-    background-color: rgba(255, 0, 0, 0.7);
-}
-
-</style>
