@@ -6,8 +6,7 @@
         <div class="d-flex">
             <input type="text" v-model="searchInput" placeholder="Cerca"
             @keyup="$emit( 'emitSearch', searchInput )">
-        </div>
-        
+        </div>    
     </header>
 </template>
 

@@ -19,7 +19,6 @@ export default {
         singleFilm: Object
     }
 }
-
 </script>
 
 <style lang="scss">
@@ -37,7 +36,5 @@ export default {
 .card-body span{
     color: white;
 }
-
-
 
 </style>

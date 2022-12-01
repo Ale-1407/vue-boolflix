@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderComp @emitSearch="searchFilms" />
-    <MainComp :paramFilms="arrayFilms" />
+    <MainComp :paramFilms="arrayFilms" :paramSerie="serieTv"/>
   </div>
 </template>
 
@@ -20,17 +20,24 @@ export default {
   },
   data(){
     return{
-      arrayFilms: []
+      arrayFilms: [],
+      serieTv: []
+
     }
   },
   methods: {
     searchFilms(valoreEmit){
 
       axios.get( 'https://api.themoviedb.org/3/search/movie?api_key=cda4dbae7b4e0973efae2441cd54614c&query=' + valoreEmit )
-
       .then((response) => {
         this.arrayFilms = response.data.results
       })
+
+      axios.get( 'https://api.themoviedb.org/3/search/tv?api_key=cda4dbae7b4e0973efae2441cd54614c&query=' + valoreEmit )
+      .then((response) => {
+        this.serieTv = response.data.results
+      })
+      
     }
   }
 }
@@ -41,7 +48,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
   background-color: #141414;
   height: 100vh;
 }
