@@ -1,11 +1,11 @@
 <template>
     <main>
         <div class="cont-film">
-            <h3 class="text-light ms-3">Film</h3>
+            <h3 class="text-light ms-3 mb-4">Film</h3>
             <FilmComp :filmsData="paramFilms" />
         </div> 
         <div class="cont-serie">
-            <h3 class="text-light ms-3">Serie TV</h3>
+            <h3 class="text-light ms-3 mt-4">Serie TV</h3>
             <SerieTvComp :serieData="paramSerie" />
         </div>   
             
