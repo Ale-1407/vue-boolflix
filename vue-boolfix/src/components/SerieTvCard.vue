@@ -12,6 +12,7 @@
                 <div>
                     <span class="fw-semibold">Lingua: </span>
                     <span class="font"> {{ singleSerie.original_language }}</span>
+                    <img :src=" `https://www.countryflagicons.com/SHINY/64/.png`" alt="img">
                 </div>
                 <div>
                     <span class="fw-semibold">Voto: </span>
