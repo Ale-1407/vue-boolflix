@@ -5,11 +5,22 @@
         </div>
         <div class="card-body">
             <div class="card-text d-flex flex-column">
-               <span>Titolo: {{ singleSerie.name }}</span>
-               <span>Titolo originale: {{ singleSerie.original_name}}</span>
-               <span>Lingua: {{ singleSerie.original_language }}</span>
-               <span>Voto: {{ singleSerie.vote_average }}</span>
-               <span>Overview: {{ singleSerie.overview }}</span> 
+                <div>
+                    <span class="fw-semibold">Titolo: </span>
+                    <span class="font"> {{ singleSerie.name }}</span>
+                </div>
+                <div>
+                    <span class="fw-semibold">Lingua: </span>
+                    <span class="font"> {{ singleSerie.original_language }}</span>
+                </div>
+                <div>
+                    <span class="fw-semibold">Voto: </span>
+                    <span class="font"> {{ singleSerie.vote_average }}</span>
+                </div>
+                <div>
+                    <span class="fw-semibold">Overview: </span>
+                    <span class="font"> {{ singleSerie.overview }}</span>
+                </div>
             </div>          
         </div>
     </div>
@@ -32,7 +43,7 @@ export default {
 }
 
 .card-body{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
 }
 

@@ -27,5 +27,14 @@ export default {
 header{
   background-image: linear-gradient(black, #141414) ;
 }
+input{
+  border-color: transparent;
+}
+
+input:hover{
+  background-color: #be2e42;
+  color: white;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+}
 </style>
 

@@ -6,11 +6,23 @@
         
         <div class="card-body">
             <div class="card-text d-flex flex-column">
-                <span>Titolo: {{ singleFilm.title }}</span>
-                <span>Titolo originale: {{ singleFilm.original_title }}</span>
-                <span>Lingua: {{ singleFilm.original_language }}</span>
-                <span>Voto: {{ singleFilm.vote_average }}</span>
-                <span>Overview: {{ singleFilm.overview }}</span>
+                <div>
+                    <span class="fw-semibold">Titolo: </span>
+                    <span class="font"> {{ singleFilm.title }}</span>
+                </div>
+                <div>
+                    <span class="fw-semibold">Lingua: </span>
+                    <span class="font"> {{ singleFilm.original_language }}</span>
+                    <img :src=" `https://www.countryflagicons.com/SHINY/64/.png`" alt="img">
+                </div>
+                <div>
+                    <span class="fw-semibold">Voto: </span>
+                    <span class="font"> {{ singleFilm.vote_average }}</span>
+                </div>
+                <div>
+                    <span class="fw-semibold">Overview: </span>
+                    <span class="font"> {{ singleFilm.overview }}</span>
+                </div>
             </div>
         </div>
     </div>
@@ -31,12 +43,19 @@ export default {
 .card{
     width: calc( 100% / 6);
     cursor: pointer;
-    
+}
+
+.card:hover{
+    box-shadow: 0px 15px 20px rgba(190, 46, 66, 0.5);
 }
 
 .card-body{
     background-color: black;
     display: none;
+}
+
+.font{
+    font-size: 14px;
 }
 
 .card-body span{
