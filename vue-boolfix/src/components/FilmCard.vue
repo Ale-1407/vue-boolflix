@@ -34,7 +34,8 @@ export default {
     name: 'FilmCard',
     props: {
         singleFilm: Object
-    }
+    },
+    
 }
 </script>
 
