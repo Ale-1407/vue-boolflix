@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-dark d-flex justify-content-between align-items-center p-3">
+    <header class="d-flex justify-content-between align-items-center p-3">
         <div>
           <h2 class="text-danger fw-semibold">BOOLFLIX</h2>
         </div>
@@ -22,4 +22,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+
+header{
+  background-image: linear-gradient(black, #141414) ;
+}
+</style>
 

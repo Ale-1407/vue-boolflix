@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="cont-card d-flex flex-wrap justify-content-center py-4">
         <FilmCard v-for="(elem, index) in filmsData" :key="index" :singleFilm="elem" />
     </div>
 </template>
@@ -19,3 +19,7 @@ export default {
 
 }
 </script>
+
+<style lang="scss">
+
+</style>
