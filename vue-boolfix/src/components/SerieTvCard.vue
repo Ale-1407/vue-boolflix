@@ -43,6 +43,7 @@ export default {
 .image img{
     width: 100%;
     display: block;
+    height: 380px;
 }
 
 .card:hover img{

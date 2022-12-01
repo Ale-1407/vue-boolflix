@@ -48,6 +48,12 @@ export default {
     width: 100%;
 }
 
+.image img{
+    width: 100%;
+    display: block;
+    height: 380px;
+}
+
 .image:hover{
     display: none;
 }
